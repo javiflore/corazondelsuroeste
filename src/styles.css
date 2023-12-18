@@ -1,1 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global styles and structure */
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+/* Estructure */
+
+body {
+    height: 100dvh;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    height: 10%;
+}
+
+main {
+    min-height: 70%;
+    padding: 1.5rem;
+    /* padding-bottom: 25%; */
+}
+
+footer {
+    height: 10%
+}
+
+
+/* Styles */
+
+body {
+    background-color: rgb(203, 202, 200);
+}
+
+.black-shadow {
+    box-shadow: 0px 5px 25px hsla(240, 14%, 12%, 0.349);
+}
+
+.space-letters {
+    letter-spacing: 2px;
+}

@@ -1,0 +1,21 @@
+<nav class="navbar navbar-dark bg-dark black-shadow">
+    <div class="container-fluid">
+      <div class="d-flex text-white space-letters name">
+        Corazón del SurOeste
+        <!-- <img [routerLink]="['/inicio']" src="../../../../assets/logos/logo-modified.png" style="max-height: 2.5rem;" alt=""> -->
+        <!-- <p class="text-capitalize mb-0 ms-3">{{pagina}}</p> -->
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDropdown" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+</nav>
+<div class="collapse black-shadow bg-white position-absolute end-0" id="navbarDropdown">
+    <div class="d-flex flex-column fondo-naranja-claro text-end padding-dropdown space-letters py-3">
+        <div [routerLink]="['/tarifas']">Biografía</div><hr/>
+        <div [routerLink]="['/horario']">Discografía</div><hr/>
+        <div [routerLink]="['/horario']">Enlaces</div><hr/>
+        <div [routerLink]="['/horario']">Contacto</div>
+    </div>
+</div>
+

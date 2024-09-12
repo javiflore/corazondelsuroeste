@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'corazondelsuroeste';
+
+  selectedPage = 'inicio';
+
+  
+  viewClicked(event: string){
+    console.log('Ha sido clicado', event);
+    this.selectedPage = event;
+    this.scrollUp();
+  }
+
+  scrollUp() {
+    window.scrollTo(0, 0);
+  }
+
 }

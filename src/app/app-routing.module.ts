@@ -4,9 +4,9 @@ import { AvisosLegalesComponent } from './components/avisos-legales/avisos-legal
 import { InicioComponent } from './components/inicio/inicio.component';
 
 const routes: Routes = [
-  { path: 'inicio', component: InicioComponent },
-  { path: 'avisos-legales', component: AvisosLegalesComponent },
-  { path: '**', redirectTo: '/inicio', pathMatch: 'full' }
+  { path: '', component: InicioComponent },
+  { path: '', component: AvisosLegalesComponent },
+  { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
 @NgModule({

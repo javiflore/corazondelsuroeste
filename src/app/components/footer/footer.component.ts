@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent {
+
+  @Output() selectedPage = new EventEmitter<string>();
+
+  avisosClicked(event: string){
+    this.selectedPage.emit(event);
+  }
 
 }

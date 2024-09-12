@@ -7,6 +7,8 @@ import { InicioComponent } from './components/inicio/inicio.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AvisosLegalesComponent } from './components/avisos-legales/avisos-legales.component';
+import { BiografiaComponent } from './components/biografia/biografia.component';
+import { DiscografiaComponent } from './components/discografia/discografia.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { AvisosLegalesComponent } from './components/avisos-legales/avisos-legal
     InicioComponent,
     HeaderComponent,
     FooterComponent,
-    AvisosLegalesComponent
+    AvisosLegalesComponent,
+    BiografiaComponent,
+    DiscografiaComponent
   ],
   imports: [
     BrowserModule,

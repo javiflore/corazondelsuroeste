@@ -1,5 +1,6 @@
 #navbarDropdown {
     width: 60%;
+    z-index: 999;
 }
 
 .padding-dropdown > div {

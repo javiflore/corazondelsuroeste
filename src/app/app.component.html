@@ -1,5 +1,7 @@
 <app-header (selectedHamb)="viewClicked($event)" ></app-header>
 <!-- <router-outlet></router-outlet> -->
- <app-inicio *ngIf="selectedPage == 'inicio'"></app-inicio>
- <app-avisos-legales *ngIf="selectedPage == 'avisos'"></app-avisos-legales>
+    <app-inicio *ngIf="selectedPage == 'inicio'"></app-inicio>
+    <app-avisos-legales *ngIf="selectedPage == 'avisos'"></app-avisos-legales>
+    <app-biografia *ngIf="selectedPage == 'biografia'"></app-biografia>
+    <app-discografia *ngIf="selectedPage == 'discografia'"></app-discografia>
 <app-footer (selectedPage)="viewClicked($event)"></app-footer>

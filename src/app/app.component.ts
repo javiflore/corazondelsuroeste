@@ -12,7 +12,6 @@ export class AppComponent {
 
   
   viewClicked(event: string){
-    console.log('Ha sido clicado', event);
     this.selectedPage = event;
     this.scrollUp();
   }

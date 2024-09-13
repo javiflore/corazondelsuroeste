@@ -23,10 +23,7 @@ export class HeaderComponent {
   }
 
   hambClicked(clicked: string){
-    console.log('Header: ', clicked);
-
     this.closeHambMenu();
-
     this.selectedHamb.emit(clicked);
   }
 

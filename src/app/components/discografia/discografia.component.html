@@ -1,13 +1,12 @@
 <main>
     <h2>Discografía</h2>
-    <div id="discografia">
+    <!-- <div id="discografia">
         <div class="card mb-3">
             <a href="https://open.spotify.com/intl-es/album/2IIRERnEi0cuxMND1a0UpF">
                 <img src="./assets/discografia/lovingYou.jpg" class="card-img-top" alt="carátula segundo album">
             </a>
             <div class="card-body">
               <h5 class="card-title">Loving You</h5>
-              <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
               <p class="card-text"><small class="text-body-secondary">30 de junio de 2023</small></p>
             </div>
         </div>
@@ -17,11 +16,20 @@
             </a>
             <div class="card-body">
               <h5 class="card-title">Turning Back Home</h5>
-              <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
               <p class="card-text"><small class="text-body-secondary">28 de octubre de 2021</small></p>
             </div>
         </div>
+    </div> -->
+
+    <div >
+        <div *ngFor="let album of discographyData" class="card mb-3">
+          <a *ngIf="album.spotifyUrl" href="{{ album.spotifyUrl }}">
+            <img [src]="album.imageUrl" class="card-img-top" alt="carátula del album {{ album.title }}">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">{{ album.title }}</h5>
+            <p class="card-text"><small class="text-body-secondary">{{ album.releaseDate }}</small></p>
+          </div>
+        </div>
     </div>
-    <!-- <h2>Imágenes y vídeos</h2>
-    <div></div> -->
 </main>

@@ -7,14 +7,40 @@ main > div{
     width: 100%;
     height: auto;
     display: block;
+    border-radius: 7px;
 }
 
 span {
     font-weight: bold;
 }
 
+.hero-content h1 {
+    height: 1em;
+}
+
 /* Enlaces discografía */
-/* a {
-    color: black;
+a{
     text-decoration: none;
-} */
+    color: rgb(226 224 220);
+}
+
+
+  .btn-escuchar {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  
+    border-radius: 4px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    transition: all 0.2s ease-in-out;
+  }
+  
+  .btn-escuchar:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
